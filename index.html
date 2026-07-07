@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse Chat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="logo">💬</div>
+          <div>
+            <h1>Pulse Chat</h1>
+            <p>Group chats, made simple.</p>
+          </div>
+        </div>
+
+        <section class="profile-card">
+          <label for="userName">Your name</label>
+          <input id="userName" type="text" maxlength="20" placeholder="Enter your name" />
+        </section>
+
+        <section class="group-form">
+          <h2>Create a group</h2>
+          <input id="groupName" type="text" maxlength="24" placeholder="New group name" />
+          <button id="createGroupBtn">Create group</button>
+        </section>
+
+        <section>
+          <div class="section-title">Groups</div>
+          <div id="groupsList" class="groups-list"></div>
+        </section>
+      </aside>
+
+      <main class="chat-panel">
+        <header class="chat-header">
+          <div>
+            <div id="groupTitle" class="group-title">Select a group</div>
+            <div id="groupMeta" class="group-meta">Choose a conversation to get started.</div>
+          </div>
+        </header>
+
+        <section id="messages" class="messages"></section>
+
+        <form id="composer" class="composer">
+          <input id="messageInput" type="text" maxlength="240" placeholder="Type a message..." />
+          <button type="submit">Send</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
